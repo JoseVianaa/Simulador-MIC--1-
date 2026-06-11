@@ -5,7 +5,7 @@ import java.util.ArrayList;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) throws IOException {
-        BancoRegistradores banco = new BancoRegistradores();
-        banco.printarBancoRegistradores();
+        CPU processador = new CPU();
+        processador.executar("src\\Programa.txt");
     }
 }

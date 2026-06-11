@@ -45,6 +45,10 @@ public class Memoria {
     }
 
     public void printMemoriaBin(){
+        System.out.println("*******************************************************");
+        System.out.println("MP Completa em binário:");
+        System.out.println("*******************************************************");
+        System.out.println("\n");
         for (int i=0; i<tamMP; i++){
             // & é um operador AND bit a bit; 0xFFFF é hexa para 1111111111111111; formata para uma palavra de 16 bits
             String binario = Integer.toBinaryString(memoriaMP[i] & 0xFFFF);

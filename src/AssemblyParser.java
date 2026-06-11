@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 public class AssemblyParser {
 
-    private final String nomeArquivo;
+    private String nomeArquivo;
 
     private static final Map<String, Integer> opcode12 = criarOpcodes12();
     private static final Map<String, Integer> opcode08 = criarOpcodes08();
@@ -201,5 +201,9 @@ public class AssemblyParser {
         map.put("RETN", 63488);
         map.put("SWAP", 64000);
         return map;
+    }
+
+    public void setNomeArquivo(String nomeArquivo){
+        this.nomeArquivo=nomeArquivo;
     }
 }
