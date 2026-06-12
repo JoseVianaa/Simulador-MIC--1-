@@ -8,7 +8,13 @@ public class CPU {
     Registrador mar;
     Registrador mbr;
     BancoRegistradores bancoRegistradores;
+    AMUX Amux;
+    Shifter shifter;
     ULA ula;
+    short barramentoA;
+    short barramentoB;
+    short barramentoC;
+    UnidadeControle uc;
 
     public CPU (){
         this.memoriaMP =  new Memoria();
@@ -16,7 +22,13 @@ public class CPU {
         this.mar = new Registrador("MAR");
         this.mbr = new Registrador("MBR");
         this.bancoRegistradores = new BancoRegistradores();
+        this.Amux = new AMUX();
+        this.shifter = new Shifter();
         this.ula = new ULA();
+        this.barramentoA = 0;
+        this.barramentoB = 0;
+        this.barramentoC = 0;
+        this.uc = new UnidadeControle();
     }
 
     private void declararPrograma(String nomeArquivo){
@@ -56,5 +68,16 @@ public class CPU {
 
     public void quartoSubCiclo(){
         System.out.println("Quarto subciclo...");
+    }
+
+
+    public void printarMP(){
+        this.memoriaMP.printMemoriaBin();
+    }
+    public void printarBancoBarramentos(){
+        this.bancoRegistradores.printarBancoRegistradores();
+    }
+    public void printarMC(){
+        this.uc.printarMC();
     }
 }
