@@ -1,0 +1,13 @@
+com\example\simulador\MemoriaControle.class
+com\example\simulador\BancoRegistradores.class
+com\example\simulador\CPU.class
+com\example\simulador\Main.class
+com\example\simulador\SimuladorControle.class
+com\example\simulador\Memoria.class
+com\example\simulador\UnidadeControle.class
+com\example\simulador\ULA.class
+com\example\simulador\AssemblyParser.class
+com\example\simulador\Registrador.class
+com\example\simulador\Microinstrucao.class
+com\example\simulador\AMUX.class
+com\example\simulador\Shifter.class
