@@ -1,0 +1,5 @@
+START: LOCO 1000
+STOD 100
+LOCO 20
+STOD var1
+  var1:

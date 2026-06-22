@@ -1,0 +1,25 @@
+START: LOCO 16
+  STOD var1
+  / carrega var1 como 16. representa o n° de valores a calcular
+  LOCO 1
+  STOD var2
+  / carrega var2 como 1. é o passo do contador
+  LOCO 1
+  PUSH
+  PUSH
+  /carrega 1 e 1 na pilha, os primeiros números da sequência
+  LOOP: LODL 1
+  /ac = m[sp+1], ou seja, o penúltimo valor
+  ADDL 0
+  / ac = ac+topo da pilha. ou seja: soma o último valor ao penúltimo
+  PUSH
+  / empurra o novo valor para a pilha
+  LODD var1
+  SUBD var2
+  STOD var1
+  /atualiza o contador
+  JZER END
+  JUMP LOOP
+  END:
+  var2:
+  var1:
