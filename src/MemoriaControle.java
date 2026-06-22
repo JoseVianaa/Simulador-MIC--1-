@@ -129,4 +129,12 @@ public class MemoriaControle {
         }
     }
 
+    public Microinstrucao[] getMicroprograma(){
+        return microprograma;
+    }
+
+    public Microinstrucao getMicroinstrucao(int endereco){
+        return microprograma[endereco];
+    }
+
 }

@@ -6,9 +6,9 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) throws IOException {
         CPU processador = new CPU();
-        processador.executar("src\\Programa.txt");
+        processador.executar("src\\Programa1.txt");
         processador.printarMP();
-        processador.printarMC();
-        processador.printarBancoBarramentos();
+        //processador.printarMC();
+        processador.printarBancoRegistradores();
     }
 }

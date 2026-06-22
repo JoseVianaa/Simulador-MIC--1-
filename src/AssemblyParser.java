@@ -46,10 +46,6 @@ public class AssemblyParser {
                     indiceInicio = 1;
                 }
 
-                // Se a linha tinha só label, não ocupa palavra de memória; linhaAtual não é incrementado
-                if (indiceInicio >= linhaParts.length) {
-                    continue;
-                }
                 linhaAtual = linhaAtual + 1;
             }
         }
